@@ -1,0 +1,37 @@
+/* icons-font */
+@font-face {
+    font-family: 'icons_font';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/icons_font.eot');
+    src: url('../fonts/icons_font.woff2') format('woff2'),
+           url('../fonts/icons_font.woff') format('woff'),
+           url('../fonts/icons_font.ttf') format('truetype'),
+           url('../fonts/icons_font.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/icons_font.svg#icons_font') format('svg');
+}
+
+.icon-font[class^="icon-font-"],
+.icon-font[class*=" icon-font-"] {
+    display: inline-block;
+    font-family: 'icons_font';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: none;
+}
+
+$icons: (
+    hand21: '\EA01',
+    heart: '\EA02',
+    right11: '\EA03'
+);
+
+@each $name, $icon in $icons {
+    .icon-font-#{$name}:before {
+        content: $icon;
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "gulp-svg-to-iconfont-2015",
+  "version": "1.0.0",
+  "description": "Generate icon font ( iconfont ) from SVG files ",
+  "author": "Perfect Pixel",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aleksandr2015/gulp-svg-to-iconfont-2015"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-consolidate": "^0.1.2",
+    "gulp-iconfont": "^4.0.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-svgmin": "^1.2.0",
+    "lodash": "^3.10.1"
+  }
+}
